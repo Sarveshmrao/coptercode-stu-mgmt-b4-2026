@@ -74,7 +74,21 @@ export default function StudentForm({ onSubmit, onCancel, initialData }) {
             className="w-full mt-1 p-2 border border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500"
           />
         </div>
-    
+
+        <div>
+          <label className="block text-sm font-medium text-gray-700">
+            Roll Number
+          </label>
+          <input
+            type="text"
+            name="roll"
+            value={formData.roll}
+            onChange={handleChange}
+            required
+            className="w-full mt-1 p-2 border border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500"
+          />
+        </div>
+
         <div className="flex justify-end gap-2 mt-6">
           <button
             type="button"
